@@ -32,6 +32,7 @@ export const DEFAULT_CONFIG = {
     defaultNote: 'ALWAYS_ASK' // 'ALWAYS_ASK', 'SNIPPET_NOTE', 'MARKDOWN_NOTE'
   },
   editor: {
+    markdownNoteSyntaxHighlighting: 'GitHub Flavored Markdown',
     theme: 'base16-light',
     keyMap: 'sublime',
     fontSize: '14',

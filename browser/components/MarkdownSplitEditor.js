@@ -101,7 +101,7 @@ class MarkdownSplitEditor extends React.Component {
         <CodeEditor
           styleName='codeEditor'
           ref='code'
-          mode='GitHub Flavored Markdown'
+          mode={config.editor.markdownNoteSyntaxHighlighting}
           value={value}
           theme={config.editor.theme}
           keyMap={config.editor.keyMap}

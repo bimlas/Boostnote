@@ -72,6 +72,7 @@ class UiTab extends React.Component {
           : false
       },
       editor: {
+        markdownNoteSyntaxHighlighting: this.refs.editorMarkdownNoteSyntaxHighlighting.value,
         theme: this.refs.editorTheme.value,
         fontSize: this.refs.editorFontSize.value,
         fontFamily: this.refs.editorFontFamily.value,
@@ -241,6 +242,19 @@ class UiTab extends React.Component {
           }
           <div styleName='group-header2'>Editor</div>
 
+          <div styleName='group-section'>
+            <div styleName='group-section-label'>
+              {i18n.__('Markdown Note Syntax Highlighting')}
+            </div>
+            <div styleName='group-section-control'>
+              <input styleName='group-section-control-input'
+                ref='editorMarkdownNoteSyntaxHighlighting'
+                value={config.editor.markdownNoteSyntaxHighlighting}
+                onChange={(e) => this.handleUIChange(e)}
+                type='text'
+              />
+            </div>
+          </div>
           <div styleName='group-section'>
             <div styleName='group-section-label'>
               {i18n.__('Editor Theme')}

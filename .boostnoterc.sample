@@ -1,6 +1,7 @@
 {
     "amaEnabled": true,
     "editor": {
+        "markdownNoteSyntax": "GitHub Flavored Markdown",
         "fontFamily": "Monaco, Consolas",
         "fontSize": "14",
         "indentSize": "2",
